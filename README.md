@@ -1,1 +1,3 @@
-# c-postgresql
+# C examples using PostgreSQL
+
+

@@ -84,8 +84,15 @@ O arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta ex
 :bookmark_tabs: Descrição dos arquivos
 ---
 
+De uso geral:
+
 - <b>build.sh</b>: Gera executáveis (compila).
 - <b>settings.h</b>: Header contendo as configurações do servidor PostgreSQL.
+
+<br>
+
+Códigos:
+
 - <b>1 - connect.c</b>: Realiza a conexão com o servidor. 
 
 <br>

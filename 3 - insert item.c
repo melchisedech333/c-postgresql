@@ -17,39 +17,34 @@ int main (int argc, char *argv[])
 
     printf("Connected!\n");
 
-    // Delete table if exists.
-    PGresult *res = PQexec(conn, "DROP TABLE IF EXISTS example");
+    // Insert new item.
+    char *stm = 
+        " INSERT INTO example ( "
+        "    id,                "
+        "    name               "
+        " ) VALUES (            "
+        "    $1, $2             "
+        " );                    ";
     
+    int total_items   = 2;
+    char *items     []= {
+        "1",
+        "Test item"
+    };
+
+    PGresult *res = PQexecParams(
+            conn, stm, total_items, NULL, (const char * const*) items, NULL, NULL, 0);
+
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
-        fprintf(stderr, "Drop error, %s\n", PQerrorMessage(conn));    
+        fprintf(stderr, "Insert error, %s\n", PQerrorMessage(conn));    
 
         PQclear(res);
         PQfinish(conn);    
 
         exit(1);
     }
-    
-    PQclear(res);
-    printf("Drop table OK!\n");
-    
-    // Create new table.
-    res = PQexec(conn, 
-        " CREATE TABLE example (  "
-        "      id   INT,          "
-        "      name VARCHAR(100)  "
-        " );                    ");
-        
-    if (PQresultStatus(res) != PGRES_COMMAND_OK) {
-        fprintf(stderr, "Create error, %s\n", PQerrorMessage(conn));    
 
-        PQclear(res);
-        PQfinish(conn);    
-
-        exit(1);
-    }
-    
-    PQclear(res);
-    printf("Create table OK!\n");
+    printf("Item successfully inserted into the database.\n");
 
     // Close connection.
     PQfinish(conn);

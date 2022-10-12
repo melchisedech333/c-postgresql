@@ -30,6 +30,19 @@ O propósito dos códigos deste repositório é fornecer um conjunto de exemplos
 
 <br>
 
+
+:bookmark_tabs: Sumário
+-----
+* [Noções gerais](#star-Noções-gerais)
+* [Compilando os códigos](#hammer-Compilando-os-códigos)
+* [Descrição dos arquivos](#bookmark_tabs-Descrição-dos-arquivos)
+* [Referências e Links](#link-Referências-e-Links)
+* [Autor](#smiley-autor)
+* [Licença](#scroll-licença)
+-----
+
+<br>
+
 :star: Noções gerais
 ---
 

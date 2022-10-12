@@ -34,8 +34,8 @@ O propósito dos códigos deste repositório é fornecer um conjunto de exemplos
 :bookmark_tabs: Sumário
 -----
 * [Noções gerais](#star-Noções-gerais)
-* [Compilando os códigos](#hammer-Compilando-os-códigos)
 * [Descrição dos arquivos](#clipboard-Descrição-dos-arquivos)
+* [Compilando os códigos](#hammer-Compilando-os-códigos)
 * [Referências e Links](#link-Referências-e-Links)
 * [Autor](#smiley-autor)
 * [Licença](#scroll-licença)
@@ -75,6 +75,23 @@ Ao acessar o servidor, você pode utilizar estes comandos abaixo para gerenciá-
 
 <br>
 
+:clipboard: Descrição dos arquivos
+---
+
+De uso geral:
+
+- <b>build.sh</b>: Gera executáveis (compila).
+- <b>settings.h</b>: Header contendo as configurações do servidor PostgreSQL.
+
+<br>
+
+Códigos:
+
+- <b>1 - connect.c</b>: Realiza a conexão com o servidor. 
+- <b>2 - create table.c</b>: Cria uma nova tabela no banco de dados. 
+
+<br>
+
 :hammer: Compilando os códigos
 ---
 
@@ -91,23 +108,6 @@ O arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta ex
 ```bash
 ./app-test
 ```
-
-<br>
-
-:clipboard: Descrição dos arquivos
----
-
-De uso geral:
-
-- <b>build.sh</b>: Gera executáveis (compila).
-- <b>settings.h</b>: Header contendo as configurações do servidor PostgreSQL.
-
-<br>
-
-Códigos:
-
-- <b>1 - connect.c</b>: Realiza a conexão com o servidor. 
-- <b>2 - create table.c</b>: Cria uma nova tabela no banco de dados. 
 
 <br>
 

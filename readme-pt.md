@@ -98,7 +98,7 @@ Códigos:
 
 <br>
 
-: Referências e Links
+:link: Referências e Links
 ---
 
 [ZetCode, PostgreSQL programming in C](https://zetcode.com/db/postgresqlc/)

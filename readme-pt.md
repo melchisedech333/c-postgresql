@@ -67,13 +67,17 @@ Ao acessar o servidor, você pode utilizar estes comandos abaixo para gerenciá-
 
 Para compilar os códigos, basta executar o script <b>build.sh</b>, especificando em seus parâmetros o nome do arquivo que você deseja compilar, como no exemplo abaixo.
 
-```
+```bash
 ./build.sh "1 - connect.c"
 ```
 
 <br>
 
-<b>Obs:</b> o arquivo compilado sempre fica salvo com o nome <b>app-test</b>.
+<b>Obs:</b> o arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta executá-lo para realizar os testes.
+
+```bash
+./app-test
+```
 
 <br>
 

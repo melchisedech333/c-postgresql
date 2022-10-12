@@ -30,7 +30,7 @@ O propósito dos códigos deste repositório é fornecer um conjunto de exemplos
 
 <br>
 
-:information_source: Noções gerais
+:star: Noções gerais
 ---
 
 <br>

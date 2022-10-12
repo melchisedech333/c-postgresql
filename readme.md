@@ -43,7 +43,7 @@ The purpose of the codes in this repository is to provide a set of code examples
 
 <br>
 
-Para instalar o PostgreSQL no Linux (distribuições baseadas em Debian/Ubuntu), você pode executar os comandos abaixo.
+To install PostgreSQL on Linux (Debian/Ubuntu based distributions) you can run the commands below.
 
 ```bash
 sudo apt install postgresql postgresql-contrib
@@ -52,20 +52,20 @@ sudo apt install libpq-dev
 
 <br>
 
-Conectar no servidor:
+Connect to server:
 ```bash
 sudo -u postgres psql
 ```
 
 <br>
 
-Ao acessar o servidor, você pode utilizar estes comandos abaixo para gerenciá-lo.
+When accessing the server, you can use these commands below to manage it.
 
 ```
-\l                     Lista os bancos de dados.
-\c DB_NAME             Conecta em um banco de dados existente.
-\dt                    Lista as tabelas existentes.
-\q                     Sair do servidor.
+\l                     Lists the databases.
+\c DB_NAME             Connects to an existing database.
+\dt                    Lists existing tables.
+\q                     Log out of the server.
 ```
 
 <br>
@@ -73,28 +73,28 @@ Ao acessar o servidor, você pode utilizar estes comandos abaixo para gerenciá-
 :clipboard: Description of files
 ---
 
-De uso geral:
+General use:
 
-- <b>build.sh</b>: Gera executáveis (compila).
-- <b>settings.h</b>: Header contendo as configurações do servidor PostgreSQL.
+- <b>build.sh</b>: Generate executables (compile).
+- <b>settings.h</b>: Header containing PostgreSQL server settings.
 
 <br>
 
-Códigos:
+Codes:
 
-- <b>1 - connect.c</b>: Realiza a conexão com o servidor.
-- <b>2 - create table.c</b>: Cria e exclui uma tabela no banco de dados.
-- <b>3 - insert item.c</b>: Insere registros em uma tabela.
-- <b>4 - select all.c</b>: Seleciona os registros de uma tabela.
-- <b>5 - delete.c</b>: Exclui registros.
-- <b>6 - update.c</b>: Atualiza registros.
+- <b>1 - connect.c</b>: Makes the connection to the server.
+- <b>2 - create table.c</b>: Creates and deletes a table in the database.
+- <b>3 - insert item.c</b>: Insert records into a table.
+- <b>4 - select all.c</b>: Selects records from a table.
+- <b>5 - delete.c</b>: Delete records.
+- <b>6 - update.c</b>: Update records.
 
 <br>
 
 :hammer: Compiling the codes
 ---
 
-Para compilar os códigos, basta executar o script <b>build.sh</b>, especificando em seus parâmetros o nome do arquivo que você deseja compilar, como no exemplo abaixo.
+To compile the codes, just run the <b>build.sh</b> script, specifying in its parameters the name of the file you want to compile, as in the example below.
 
 ```bash
 ./build.sh "1 - connect.c"
@@ -102,7 +102,7 @@ Para compilar os códigos, basta executar o script <b>build.sh</b>, especificand
 
 <br>
 
-O arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta executá-lo para realizar os testes.
+The compiled file is always saved with the name <b>app-test</b>, so just run it to run the tests.
 
 ```bash
 ./app-test

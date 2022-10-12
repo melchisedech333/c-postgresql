@@ -18,11 +18,62 @@
     <img src="https://img.shields.io/github/license/melchisedech333/c-postgresql?label=licen%C3%A7a" >
 </p>
 
+<br>
+
 Language: <a href="readme.md">EN-US</a>
 
+<br>
 
+O propósito dos códigos deste repositório é fornecer um conjunto de exemplos de código para quem está começando a usar o PostgreSQL com a linguagem C.
 
 **Se meu código te ajudou em algo, considere [ser um patrocinador](https://github.com/sponsors/melchisedech333) :blue_heart:** 
+
+<br>
+
+:information_source: Noções gerais
+---
+
+<br>
+
+Para instalar o PostgreSQL no Linux (distribuições baseadas em Debian/Ubuntu), você pode executar os comandos abaixo.
+
+```bash
+sudo apt install postgresql postgresql-contrib
+sudo apt install libpq-dev
+```
+
+<br>
+
+Conectar no servidor:
+```bash
+sudo -u postgres psql
+```
+
+<br>
+
+Ao acessar o servidor, você pode utilizar estes comandos abaixo para gerenciá-lo.
+
+```
+\l                     Lista os bancos de dados.
+\c DB_NAME             Conecta em um banco de dados existente.
+\dt                    Lista as tabelas existentes.
+\q                     Sair do servidor.
+```
+
+<br>
+
+:hammer: Compilando os códigos
+---
+
+Para compilar os códigos, basta executar o script <b>build.sh</b>, especificando em seus parâmetros o nome do arquivo que você deseja compilar, como no exemplo abaixo.
+
+```
+./build.sh "1 - connect.c"
+```
+
+<br>
+
+<b>Obs:</b> o arquivo compilado sempre fica salvo com o nome <b>app-test</b>.
 
 <br>
 

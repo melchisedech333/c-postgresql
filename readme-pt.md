@@ -98,6 +98,13 @@ Códigos:
 
 <br>
 
+: Referências e Links
+---
+
+[ZetCode, PostgreSQL programming in C](https://zetcode.com/db/postgresqlc/)
+
+<br>
+
 :smiley: Autor
 ---
 
@@ -108,13 +115,6 @@ Blog: [melchisedech333.github.io](https://melchisedech333.github.io/)<br>
 LinkedIn: [Melchisedech Rex](https://www.linkedin.com/in/melchisedech-rex-724152235/)
 
 <img src="https://github.com/melchisedech333.png?size=200" height="100" />
-
-<br>
-
-: Referências e Links
----
-
-[ZetCode, PostgreSQL programming in C](https://zetcode.com/db/postgresqlc/)
 
 <br>
 

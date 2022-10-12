@@ -33,7 +33,7 @@ The purpose of the codes in this repository is to provide a set of code examples
 * [Compiling the codes](#hammer-Compiling-the-codes)
 * [References and Links](#link-References-and-Links)
 * [Author](#smiley-author)
-* [Licence](#scroll-licence)
+* [Licence](#scroll-License)
 -----
 
 <br>

@@ -16,7 +16,8 @@ int main (int argc, char *argv[])
     }
 
     printf("Connected!\n");
-
+    
+    // Run SQL command.
     PGresult *res = PQexec(conn, "SELECT * FROM example");    
     
     if (PQresultStatus(res) != PGRES_TUPLES_OK) {

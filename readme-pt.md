@@ -92,6 +92,7 @@ Códigos:
 - <b>3 - insert item.c</b>: Insere registros em uma tabela.
 - <b>4 - select all.c</b>: Seleciona os registros de uma tabela.
 - <b>5 - delete.c</b>: Exclui registros.
+- <b>6 - update.c</b>: Atualiza registros.
 
 <br>
 

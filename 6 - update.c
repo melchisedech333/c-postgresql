@@ -17,33 +17,19 @@ int main (int argc, char *argv[])
 
     printf("Connected!\n");
 
-    // Insert new item.
-    char *stm = 
-        " INSERT INTO example ( "
-        "    id,                "
-        "    name               "
-        " ) VALUES (            "
-        "    $1, $2             "
-        " );                    ";
-    
-    int total_items   = 2;
-    char *items     []= {
-        "1",
-        "Test item"
-    };
-
-    PGresult *res = PQexecParams(
-            conn, stm, total_items, NULL, (const char * const*) items, NULL, NULL, 0);
+    // Update data.
+    PGresult *res = PQexec(conn, "UPDATE example SET name = 'New name' WHERE id = 1");    
 
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
-        fprintf(stderr, "Insert error, %s\n", PQerrorMessage(conn));    
+        fprintf(stderr, "Update error, %s\n", PQerrorMessage(conn));    
         PQclear(res);
         PQfinish(conn);
         exit(0);
     }
 
+    printf("Items successfully updated.\n");
+    printf("Total: %d\n", atoi(PQcmdTuples(res)));
     PQclear(res);
-    printf("Item successfully inserted into the database.\n");
 
     // Close connection.
     PQfinish(conn);

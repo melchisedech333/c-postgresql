@@ -22,11 +22,9 @@ int main (int argc, char *argv[])
     
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
         fprintf(stderr, "Drop error, %s\n", PQerrorMessage(conn));    
-
         PQclear(res);
-        PQfinish(conn);    
-
-        exit(1);
+        PQfinish(conn);
+        exit(0);
     }
     
     PQclear(res);
@@ -41,11 +39,9 @@ int main (int argc, char *argv[])
         
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
         fprintf(stderr, "Create error, %s\n", PQerrorMessage(conn));    
-
         PQclear(res);
-        PQfinish(conn);    
-
-        exit(1);
+        PQfinish(conn);
+        exit(0);
     }
     
     PQclear(res);

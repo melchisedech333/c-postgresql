@@ -17,6 +17,7 @@ int main (int argc, char *argv[])
 
     printf("Connected!\n");
 
+    // Delete data.
     PGresult *res = PQexec(conn, "DELETE FROM example");    
     
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {

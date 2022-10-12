@@ -73,7 +73,7 @@ Para compilar os códigos, basta executar o script <b>build.sh</b>, especificand
 
 <br>
 
-<b>Obs:</b> o arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta executá-lo para realizar os testes.
+O arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta executá-lo para realizar os testes.
 
 ```bash
 ./app-test

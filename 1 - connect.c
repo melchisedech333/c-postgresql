@@ -15,8 +15,11 @@ int main (int argc, char *argv[])
         exit(0);
     }
 
+    printf("Connected!\n");
+
     // Close connection.
     PQfinish(conn);
+    printf("Disconnected!\n");
 
     return 0;
 }

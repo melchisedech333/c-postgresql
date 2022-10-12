@@ -5,7 +5,7 @@
 
 #define HOSTNAME "localhost"
 #define DATABASE "test"
-#define USERNAME "user"
+#define USERNAME "postgres"
 #define PASSWORD "123"
 
 

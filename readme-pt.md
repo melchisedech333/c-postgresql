@@ -35,7 +35,7 @@ O propósito dos códigos deste repositório é fornecer um conjunto de exemplos
 -----
 * [Noções gerais](#star-Noções-gerais)
 * [Compilando os códigos](#hammer-Compilando-os-códigos)
-* [Descrição dos arquivos](#bookmark_tabs-Descrição-dos-arquivos)
+* [Descrição dos arquivos](#clipboard-Descrição-dos-arquivos)
 * [Referências e Links](#link-Referências-e-Links)
 * [Autor](#smiley-autor)
 * [Licença](#scroll-licença)
@@ -94,7 +94,7 @@ O arquivo compilado sempre fica salvo com o nome <b>app-test</b>, logo, basta ex
 
 <br>
 
-:bookmark_tabs: Descrição dos arquivos
+:clipboard: Descrição dos arquivos
 ---
 
 De uso geral:

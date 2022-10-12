@@ -94,6 +94,7 @@ De uso geral:
 Códigos:
 
 - <b>1 - connect.c</b>: Realiza a conexão com o servidor. 
+- <b>2 - create table.c</b>: Cria uma nova tabela no banco de dados. 
 
 <br>
 
@@ -110,10 +111,17 @@ LinkedIn: [Melchisedech Rex](https://www.linkedin.com/in/melchisedech-rex-724152
 
 <br>
 
+: Referências e Links
+---
+
+[ZetCode, PostgreSQL programming in C](https://zetcode.com/db/postgresqlc/)
+
+<br>
+
 :scroll: Licença
 ---
 
-[ BSD-3-Clause license](./license)
+[BSD-3-Clause license](./license)
 
 <br><br>
 

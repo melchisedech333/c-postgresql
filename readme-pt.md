@@ -87,9 +87,11 @@ De uso geral:
 
 Códigos:
 
-- <b>1 - connect.c</b>: Realiza a conexão com o servidor. 
-- <b>2 - create table.c</b>: Cria e exclui uma tabela no banco de dados. 
-- <b>3 - insert item.c</b>: Insere registros em uma tabela. 
+- <b>1 - connect.c</b>: Realiza a conexão com o servidor.
+- <b>2 - create table.c</b>: Cria e exclui uma tabela no banco de dados.
+- <b>3 - insert item.c</b>: Insere registros em uma tabela.
+- <b>4 - select all.c</b>: Seleciona os registros de uma tabela.
+- <b>5 - delete.c</b>: Exclui registros.
 
 <br>
 

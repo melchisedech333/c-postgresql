@@ -1,3 +1,0 @@
-# C examples using PostgreSQL
-
-
